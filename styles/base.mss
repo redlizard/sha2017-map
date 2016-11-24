@@ -18,7 +18,12 @@
 
 #terrain_water_nuldernauw {
   polygon-fill: #0c6ccc;
-  polygon-smoth: @area-smoothing;
+  polygon-smooth: @area-smoothing;
+}
+
+#terrain_water_nuldernauw_reed {
+  polygon-fill: #0CCCB9;
+  polygon-smooth: @area-smoothing;
 }
 
 /*
@@ -28,6 +33,10 @@
   line-opacity: 0.5;
 }
 */
+
+#terrain_farmland [subclasses='AcDbEntity:AcDbHatch'] {
+  polygon-fill: #fbecd7;
+}
 
 #terrain_scrubland [subclasses='AcDbEntity:AcDbHatch'] {
   polygon-fill: #cdebb0;
@@ -55,4 +64,10 @@
   line-color: #7F5840;
   line-width: 1;
   polygon-fill: #D1B5A3;
+}
+
+#terrain_buildings {
+  polygon-fill: #d9d0c9;
+  line-color: darken(#d9d0c9, 15%);
+  line-width: .75;
 }

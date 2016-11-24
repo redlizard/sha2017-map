@@ -71,3 +71,8 @@
   line-color: darken(#d9d0c9, 15%);
   line-width: .75;
 }
+
+#terrain_roads_gates {
+  line-color: #DE9A00;
+  line-width: 4;
+}

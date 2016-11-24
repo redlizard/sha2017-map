@@ -1,9 +1,5 @@
 @area-smoothing: 0.1;
 
-Map {
-  background-color: #ECFFEB;
-}
-
 #meta_border, #meta_legend {
   line-color: black;
   line-width: 1;

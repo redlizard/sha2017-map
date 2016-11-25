@@ -18,7 +18,6 @@
 
 #terrain_water_nuldernauw {
   polygon-fill: #0c6ccc;
-  polygon-smooth: @area-smoothing;
 }
 
 #terrain_water_nuldernauw_reed {
@@ -48,19 +47,19 @@
   polygon-smooth: @area-smoothing;
 }
 
-#terrain_roads_main_road {
+#terrain_roads_main_road [subclasses='AcDbEntity:AcDbHatch']{
   line-color: #333;
   line-width: 1;
   polygon-fill: #cccccc;
 }
 
-#terrain_roads_paved_road {
+#terrain_roads_paved_road [subclasses='AcDbEntity:AcDbHatch']{
   line-color: #333;
   line-width: 1;
   polygon-fill: #cccccc;
 }
 
-#terrain_roads_unpaved_road {
+#terrain_roads_unpaved_road [subclasses='AcDbEntity:AcDbHatch']{
   line-color: #7F5840;
   line-width: 1;
   polygon-fill: #D1B5A3;

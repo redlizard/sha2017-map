@@ -1,0 +1,37 @@
+{"layers": {
+  "Infrastructure": [
+    "infrastructure ... conduit",
+    "infrastructure ... power terminal",
+    "infrastructure ... sewer hole"]
+  },
+
+  "styles": [
+    {"match": {
+      "layer": "infrastructure ... conduit"
+      },
+     "style": {
+      "line-color": "blue",
+      "line-width": 3,
+      "z-index": -1
+     }
+    },
+    {"match": {
+      "layer": "infrastructure ... power terminal"
+      },
+     "style": {
+      "line-color": "red",
+      "line-width": 2,
+      "polygon-fill": "red"
+     }
+    },
+    {"match": {
+      "layer": "infrastructure ... sewer hole"
+      },
+     "style": {
+      "line-color": "green",
+      "line-width": 2,
+      "polygon-fill": "green"
+     }
+    }
+  ]
+}

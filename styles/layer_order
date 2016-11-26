@@ -13,6 +13,7 @@ terrain ... scrubland
 terrain ... unused
 terrain ... woodland
 terrain ... dike
+terrain ... fields
 terrain ... water ... ditches and ponds
 terrain ... water ... ditches and ponds ... bank
 terrain ... water ... nuldernauw
@@ -21,7 +22,12 @@ terrain ... roads ... gates
 terrain ... roads ... main road
 terrain ... roads ... paved road
 terrain ... roads ... unpaved road
+terrain ... wharf
+terrain ... wharf ... mooring posts
+terrain ... concrete
+terrain ... sand
 terrain ... buildings
+objects ... tree
 infrastructure ... power terminal
 infrastructure ... sewer hole
 infrastructure ... conduit

@@ -1,37 +1,79 @@
 {"layers": {
-  "Infrastructure": [
-    "infrastructure ... conduit",
-    "infrastructure ... power terminal",
-    "infrastructure ... sewer hole"]
+  "Power SKETCH": [
+    "infrastructure ... sketch ... power ... aluminium_4x050",
+    "infrastructure ... sketch ... power ... aluminium_4x070",
+    "infrastructure ... sketch ... power ... aluminium_4x095",
+    "infrastructure ... sketch ... power ... aluminium_4x120",
+    "infrastructure ... sketch ... power ... aluminium_4x150",
+    "objects ... power terminal"
+  ],
+  "Water SKETCH": [
+    "infrastructure ... sketch ... water ... pe040",
+    "infrastructure ... sketch ... water ... pe063",
+    "infrastructure ... sketch ... water ... pe080",
+    "infrastructure ... sketch ... water ... pe090",
+    "infrastructure ... sketch ... water ... pe110"
+  ],
+  "Sewage SKETCH": [
+    "infrastructure ... sketch ... sewage ... pers_pe090mm",
+    "infrastructure ... sketch ... sewage ... pers_pe160mm",
+    "infrastructure ... sketch ... sewage ... vrijverval_pvc200",
+    "infrastructure ... sketch ... sewage ... vrijverval_pvc250",
+    "infrastructure ... sketch ... sewage ... vrijverval_pvc315",
+    "objects ... sewer hole"
+  ],
+  "Tents SKETCH": [
+    "tents ... sketch"
+  ],
+  "Buildings": [
+    "objects ... buildings",
+    "objects ... buildings ... toilet",
+    "objects ... buildings ... utility"
+  ]
   },
 
   "styles": [
-    {"match": {
-      "layer": "infrastructure ... conduit"
-      },
-     "style": {
-      "line-color": "blue",
-      "line-width": 3,
-      "z-index": -1
-     }
-    },
-    {"match": {
-      "layer": "infrastructure ... power terminal"
-      },
-     "style": {
-      "line-color": "red",
-      "line-width": 2,
-      "polygon-fill": "red"
-     }
-    },
-    {"match": {
-      "layer": "infrastructure ... sewer hole"
-      },
-     "style": {
-      "line-color": "green",
-      "line-width": 2,
-      "polygon-fill": "green"
-     }
-    }
+    {"match": { "layer": "infrastructure ... sketch ... power ... aluminium_4x050" },
+     "style": { "line-color": "red", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... power ... aluminium_4x070" },
+     "style": { "line-color": "red", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... power ... aluminium_4x095" },
+     "style": { "line-color": "red", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... power ... aluminium_4x120" },
+     "style": { "line-color": "red", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... power ... aluminium_4x150" },
+     "style": { "line-color": "red", "line-width": 3 }},
+    {"match": { "layer": "objects ... power terminal" },
+     "style": { "line-color": "black", "line-width": 5,"polygon-fill": "orange", "z-index": 5 }},
+    {"match": { "layer": "infrastructure ... sketch ... water ... pe040" },
+     "style": { "line-color": "blue", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... water ... pe063" },
+     "style": { "line-color": "blue", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... water ... pe080" },
+     "style": { "line-color": "blue", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... water ... pe090" },
+     "style": { "line-color": "blue", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... water ... pe110" },
+     "style": { "line-color": "blue", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... sewage ... pers_pe090mm" },
+     "style": { "line-color": "lightbrown", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... sewage ... pers_pe160mm" },
+     "style": { "line-color": "lightbrown", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... sewage ... vrijverval_pvc200" },
+     "style": { "line-color": "brown", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... sewage ... vrijverval_pvc250" },
+     "style": { "line-color": "brown", "line-width": 3 }},
+    {"match": { "layer": "infrastructure ... sketch ... sewage ... vrijverval_pvc315" },
+     "style": { "line-color": "brown", "line-width": 3 }},
+    {"match": { "layer": "objects ... sewer hole" },
+     "style": { "line-color": "brown", "line-width": 5,"polygon-fill": "brown", "z-index": 5 }},
+    {"match": { "layer": "tents ... sketch" },
+     "style": { "line-color": "magenta", "line-width": 2, "z-index": 3 }},
+    {"match": { "layer": "objects ... buildings" },
+     "style": { "line-color": "yellow", "line-width": 2, "polygon-fill": "yellow", "z-index": 3 }},
+    {"match": { "layer": "objects ... buildings ... toilet" },
+     "style": { "line-color": "yellow", "line-width": 2, "polygon-fill": "yellow", "z-index": 3 }},
+    {"match": { "layer": "objects ... buildings ... utility" },
+     "style": { "line-color": "yellow", "line-width": 2, "polygon-fill": "yellow", "z-index": 3 }}
   ]
 }

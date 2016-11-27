@@ -1,6 +1,6 @@
 @area-smoothing: 0.1;
 
-#meta_border /*, #meta_legend*/ {
+#border_line /*, #meta_legend*/ {
   line-color: black;
   line-width: 1;
 }

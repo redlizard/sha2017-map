@@ -7,7 +7,6 @@
 
 #terrain_water_ditches_and_ponds [subclasses='AcDbEntity:AcDbHatch'] {
   polygon-fill: #0c6ccc;
-  polygon-smooth: @area-smoothing;
 }
 
 #terrain_water_ditches_and_ponds [subclasses='AcDbEntity:AcDbLine'],
@@ -26,7 +25,6 @@
 
 #terrain_water_nuldernauw_reed {
   polygon-fill: #0CCCB9;
-  polygon-smooth: @area-smoothing;
 }
 
 #terrain_dike {
@@ -53,7 +51,6 @@
 #terrain_scrubland [subclasses='AcDbEntity:AcDbHatch'] {
   polygon-fill: #91AD76;
 /*  polygon-fill: #AAD1A5; */
-  polygon-smooth: @area-smoothing;
 }
 
 #terrain_woodland [subclasses='AcDbEntity:AcDbHatch'] {
@@ -112,9 +109,34 @@
 }
 */
 
-#terrain_fields [subclasses='AcDbEntity:AcDbHatch']{
+#terrain_roads_bridges {
+  line-color: #ff0000;
+  line-width: 3;
+}
+
+#terrain_parking_field [subclasses='AcDbEntity:AcDbLine'],
+#terrain_parking_field [subclasses='AcDbEntity:AcDbPolyline']{
+  line-color: #0000ff;
+  line-width: 1;
+}
+
+#terrain_parking_field [subclasses='AcDbEntity:AcDbHatch']{
+  polygon-fill: #00ffff;
+}
+
+
+#terrain_fields_campground [subclasses='AcDbEntity:AcDbHatch']{
   polygon-fill: #C8FE96;
 }
+
+/*
+#terrain_fields_labels [subclasses='AcDbEntity:AcDbMText']{
+  text-fill: black;
+  text-size: 16;
+  text-name: "[text]";
+  text-face-name: "DejaVu Sans Book";
+}
+*/
 
 #meta_border::fill {
   polygon-fill: #E7F9C8;

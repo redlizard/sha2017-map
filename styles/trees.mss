@@ -4,5 +4,4 @@
   line-color: darkgreen;
   line-width: 1;
   polygon-fill: darkgreen;
-  polygon-smooth: @area-smoothing;
 }

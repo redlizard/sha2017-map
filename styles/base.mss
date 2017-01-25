@@ -1,5 +1,4 @@
 @area-smoothing: 0.1;
-@text_halo: rgba(230,230,230,0.9);
 
 #border_line /*, #meta_legend*/ {
   line-color: black;
@@ -130,17 +129,14 @@
   polygon-fill: #C8FE96;
 }
 
-#terrain_fields_labels [subclasses='AcDbEntity:AcDbMText'][zoom > 14]{
+/*
+#terrain_fields_labels [subclasses='AcDbEntity:AcDbMText']{
   text-fill: black;
-  text-halo-radius: 2;
-  text-halo-fill: @text_halo;
-  text-size: 10;
-  [zoom > 16] {
-    text-size: 16;
-  }
+  text-size: 16;
   text-name: "[text]";
   text-face-name: "DejaVu Sans Book";
 }
+*/
 
 #meta_border::fill {
   polygon-fill: #E7F9C8;

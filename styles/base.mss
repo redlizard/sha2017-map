@@ -90,6 +90,11 @@
   polygon-fill: #D1B5A3;
 }
 
+#terrain_roads_firelanes {
+  line-color: #ff8000;
+  line-width: 1.5;
+}
+
 #terrain_wharf, #terrain_wharf_mooring_posts {
   polygon-fill: #804000;
   line-color: darken(#804000, 15%);

@@ -95,6 +95,15 @@
   line-width: 1.5;
 }
 
+#terrain_roads_road_plates {
+  line-color: #aa8a6a;
+  line-width: 1.5;
+}
+
+#terrain_roads_road_plates [subclasses='AcDbEntity:AcDbHatch'] {
+  polygon-fill: #aa8a6a;
+}
+
 #terrain_wharf, #terrain_wharf_mooring_posts {
   polygon-fill: #804000;
   line-color: darken(#804000, 15%);
@@ -133,15 +142,6 @@
 #terrain_fields_campground [subclasses='AcDbEntity:AcDbHatch']{
   polygon-fill: #C8FE96;
 }
-
-/*
-#terrain_fields_labels [subclasses='AcDbEntity:AcDbMText']{
-  text-fill: black;
-  text-size: 16;
-  text-name: "[text]";
-  text-face-name: "DejaVu Sans Book";
-}
-*/
 
 #meta_border::fill {
   polygon-fill: #E7F9C8;

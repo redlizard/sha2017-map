@@ -1,5 +1,3 @@
-@area-smoothing: 0.1;
-
 #border_line /*, #meta_legend*/ {
   line-color: black;
   line-width: 1;
@@ -30,36 +28,14 @@
 #terrain_dike {
   polygon-fill: #ADBE9C;
 }
-#terrain_dike::highlight {
-  line-color: #ADBE9C;
-  line-opacity: 0.2;
-  line-width: 6;
-}
-
-/*
-#terrain_water_ditches_and_ponds_bank {
-  line-color: #733D18;
-  line-width: 2;
-  line-opacity: 0.5;
-}
-*/
 
 #terrain_farmland [subclasses='AcDbEntity:AcDbHatch'] {
   polygon-fill: #fbecd7;
 }
 
-#terrain_scrubland [subclasses='AcDbEntity:AcDbHatch'] {
-  polygon-fill: #91AD76;
-/*  polygon-fill: #AAD1A5; */
-}
-
+#terrain_scrubland [subclasses='AcDbEntity:AcDbHatch'],
 #terrain_woodland [subclasses='AcDbEntity:AcDbHatch'] {
   polygon-fill: #91AD76;
-/*  polygon-fill: #9FD199; */
-  /*
-  polygon-pattern-file: url('markers/forest.png');
-  polygon-pattern-alignment: global;
-  */
 }
 
 #terrain_sand {
@@ -92,11 +68,6 @@
 
 #terrain_roads_firelanes {
   line-color: #ff8000;
-  line-width: 1.5;
-}
-
-#terrain_roads_road_plates {
-  line-color: #aa8a6a;
   line-width: 1.5;
 }
 
@@ -145,7 +116,6 @@
 
 #meta_border::fill {
   polygon-fill: #E7F9C8;
-/*  polygon-fill: #cdebb0; */
 }
 
 

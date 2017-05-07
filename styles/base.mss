@@ -114,6 +114,11 @@
   polygon-fill: #C8FE96;
 }
 
+#terrain_fence {
+  line-color: #800000;
+  line-width: 3;
+}
+
 #meta_border::fill {
   polygon-fill: #E7F9C8;
 }

@@ -215,6 +215,42 @@
 			"z-index": 2
 		},
 		{
+			"name": "Team:NOC",
+			"visible": "false",
+			"layer_style": {
+				"team-noc ... cables ... copper": {
+					"line-color": "black",
+					"line-width": 3,
+					"z-index": 3
+				},
+				"team-noc ... cables ... fibre-single-mode": {
+					"line-color": "green",
+					"line-width": 3,
+					"z-index": 3
+				},
+				"team-noc ... datenklos ... dk-and-label": {
+					"line-color": "cyan",
+					"line-width": 1,
+					"polygon-fill": "cyan",
+					"text-color": "blue",
+					"text-selectable": false,
+					"z-index": 4
+				},
+				"team-noc ... labels": {
+					"text-color": "blue",
+					"selectable": false,
+					"z-index": 4
+				},
+				"team-noc ... switch-in-tent": {
+					"line-color": "magenta",
+					"line-width": 1,
+					"polygon-fill": "magenta",
+					"z-index": 4
+				}
+			},
+			"z-index": 3
+		},
+		{
 			"name": "Power -- APPROXIMATE",
 			"visible": "false",
 			"layer_style": {

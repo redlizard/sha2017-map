@@ -95,6 +95,15 @@
 					"z-index": 3,
 					"line-width": 2
 				},
+				"generator": {
+					"layers": [
+						"team-power ... generator ... generator",
+						"team-power ... generator ... tank"
+					],
+					"line-color": "orange",
+					"z-index": 3,
+					"line-width": 2
+				},
 				"tents ... tents": {
 					"line-color": "magenta",
 					"z-index": 3,
@@ -106,7 +115,17 @@
 					"line-width": 2
 				},
 				"objects ... buildings ... container": {
-					"line-color": "#800000",
+					"line-color": "#000000",
+					"z-index": 3,
+					"line-width": 2
+				},
+				"objects ... buildings ... portacabin": {
+					"line-color": "#000000",
+					"z-index": 3,
+					"line-width": 2
+				},
+				"objects ... buildings ... radio tower": {
+					"line-color": "#c06000",
 					"z-index": 3,
 					"line-width": 2
 				},
@@ -117,9 +136,12 @@
 				},
 				"labels": {
 					"layers": [
+						"team-power ... generator ... labels",
 						"tents ... tarps ... labels",
 						"tents ... tents ... labels",
-						"objects ... buildings ... labels"
+						"objects ... buildings ... container ... labels",
+						"objects ... buildings ... labels",
+						"objects ... buildings ... portacabin ... labels"
 					],
 					"text-color": "black",
 					"selectable": false

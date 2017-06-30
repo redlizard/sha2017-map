@@ -2,7 +2,7 @@
 	"stylesheet_path": "./styles",
 	"symbol_path": "./symbols",
 	"plugins": [],
-	"extents": [ 52.292, 5.5405, 52.275, 5.169 ],
+	"extents": [ 52.292, 5.5405, 52.275, 5.5129 ],
 	"zoom_range": [ 7, 20 ],
 	"source_projection": "epsg:28992",
 	
@@ -95,6 +95,15 @@
 					"z-index": 3,
 					"line-width": 2
 				},
+				"generator": {
+					"layers": [
+						"team-power ... generator ... generator",
+						"team-power ... generator ... tank"
+					],
+					"line-color": "orange",
+					"z-index": 3,
+					"line-width": 2
+				},
 				"tents ... tents": {
 					"line-color": "magenta",
 					"z-index": 3,
@@ -106,7 +115,17 @@
 					"line-width": 2
 				},
 				"objects ... buildings ... container": {
-					"line-color": "#800000",
+					"line-color": "#000000",
+					"z-index": 3,
+					"line-width": 2
+				},
+				"objects ... buildings ... portacabin": {
+					"line-color": "#000000",
+					"z-index": 3,
+					"line-width": 2
+				},
+				"objects ... buildings ... radio tower": {
+					"line-color": "#c06000",
 					"z-index": 3,
 					"line-width": 2
 				},
@@ -117,9 +136,12 @@
 				},
 				"labels": {
 					"layers": [
+						"team-power ... generator ... labels",
 						"tents ... tarps ... labels",
 						"tents ... tents ... labels",
-						"objects ... buildings ... labels"
+						"objects ... buildings ... container ... labels",
+						"objects ... buildings ... labels",
+						"objects ... buildings ... portacabin ... labels"
 					],
 					"text-color": "black",
 					"selectable": false
@@ -234,6 +256,15 @@
 					"polygon-fill": "cyan",
 					"text-color": "blue",
 					"text-selectable": false,
+					"z-index": 4
+				},
+				"team-noc ... datenklos ... radius-40m": {
+					"line-color": "black",
+					"line-width": 1,
+					"z-index": 4
+				},
+				"team-noc ... scafftubes": {
+					"polygon-fill": "red",
 					"z-index": 4
 				},
 				"team-noc ... labels": {

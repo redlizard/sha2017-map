@@ -258,6 +258,15 @@
 					"text-selectable": false,
 					"z-index": 4
 				},
+				"team-noc ... datenklos ... radius-40m": {
+					"line-color": "black",
+					"line-width": 1,
+					"z-index": 4
+				},
+				"team-noc ... scafftubes": {
+					"polygon-fill": "red",
+					"z-index": 4
+				},
 				"team-noc ... labels": {
 					"text-color": "blue",
 					"selectable": false,

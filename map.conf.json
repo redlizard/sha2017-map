@@ -242,7 +242,7 @@
 			"layer_style": {
 				"team-noc ... cables ... copper": {
 					"line-color": "black",
-					"line-width": 3,
+					"line-width": 2,
 					"z-index": 3
 				},
 				"team-noc ... cables ... fibre-single-mode": {
@@ -259,9 +259,9 @@
 					"z-index": 4
 				},
 				"team-noc ... datenklos ... radius-40m": {
-					"line-color": "black",
-					"line-width": 1,
-					"z-index": 4
+					"polygon-fill": "rgba(120,60,60,0.2)",
+					"z-index": 4,
+					"selectable": false
 				},
 				"team-noc ... scafftubes": {
 					"polygon-fill": "red",

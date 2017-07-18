@@ -9,6 +9,8 @@
 	"source_file": {
 		"site_plan": {
 			"layers": [
+				"meta ... grid",
+				"meta ... grid ... legend",
 				"meta ... border",
 				"terrain ... farmland",
 				"terrain ... scrubland",
@@ -30,24 +32,38 @@
 				"terrain ... roads ... bridges",
 				"terrain ... wharf",
 				"terrain ... wharf ... mooring posts",
+				"terrain ... camper spot",
 				"terrain ... concrete",
 				"terrain ... sand",
 				"terrain ... buildings",
 				"terrain ... fence",
+				"tents ... tarps",
 				"objects ... tree",
+				"objects ... buildings",
+				"objects ... buildings ... toilet",
+				"objects ... buildings ... utility",
+				"objects ... buildings ... temporary toilet",
 				"infrastructure ... power terminal",
 				"infrastructure ... sewer hole",
 				"infrastructure ... conduit",
-				"meta ... legend"
+				"meta ... legend",
+				"meta ... restrictions ... early buildup"
 			],
 			"path": "../map/map.dxf",
-			"auto_import_layers": "false",
+			"auto_import_layers": "true",
 			"custom_layer": {
 				"border_line": {
 					"query": "SELECT * FROM {table} WHERE layer = 'meta ... border'"
 				}
 			}
+		},
+		"villages": {
+			"layers": ["terrain ... villages ... borders"],
+			"path": "../map/villages.dxf",
+			"auto_import_layers": "false",
+			"handle_prefix": "v"
 		}
+
 	},
 	
 	"raster_layer": [
@@ -219,12 +235,6 @@
 			"name": "Team:Logistics",
 			"visible": "false",
 			"layer_style": {
-				"team-logistics ... sketch": {
-					"line-color": "black",
-					"line-width": 2,
-					"text-color": "black",
-					"selectable": false
-				},
 				"team-logistics ... trash": {
 					"line-color": "black",
 					"line-width": 2
@@ -236,13 +246,23 @@
 			},
 			"z-index": 2
 		},
+		{ 	"name": "Village Borders",
+			"visible": "true",
+			"layer_style": {
+				"terrain ... villages ... borders": {
+					"line-color": "green",
+					"line-width": 1,
+					"z-index": 3
+				}
+			}
+		},
 		{
 			"name": "Team:NOC",
 			"visible": "false",
 			"layer_style": {
 				"team-noc ... cables ... copper": {
 					"line-color": "black",
-					"line-width": 3,
+					"line-width": 2,
 					"z-index": 3
 				},
 				"team-noc ... cables ... fibre-single-mode": {
@@ -259,9 +279,9 @@
 					"z-index": 4
 				},
 				"team-noc ... datenklos ... radius-40m": {
-					"line-color": "black",
-					"line-width": 1,
-					"z-index": 4
+					"polygon-fill": "rgba(120,60,60,0.2)",
+					"z-index": 4,
+					"selectable": false
 				},
 				"team-noc ... scafftubes": {
 					"polygon-fill": "red",

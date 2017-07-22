@@ -177,6 +177,7 @@
 		},
 		{
 			"name": "Campers",
+			"visible": "false",
 			"layer_style": {
 				"terrain ... camper spot": {
 					"line-color": "#800080",
@@ -247,7 +248,7 @@
 			"z-index": 2
 		},
 		{ 	"name": "Village Borders",
-			"visible": "true",
+			"visible": "false",
 			"layer_style": {
 				"terrain ... villages ... borders": {
 					"line-color": "green",

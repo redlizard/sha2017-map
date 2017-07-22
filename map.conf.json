@@ -166,6 +166,22 @@
 			"z-index": 2
 		},
 		{
+			"name": "Village tents",
+			"visible": "false",
+			"layer_style": {
+				"tents ... village tents": {
+					"line-color": "magenta",
+					"z-index": 3,
+					"line-width": 2
+				},
+				"tents ... village tents ... labels": {
+					"text-color": "black",
+					"selectable": false
+				}
+			},
+			"z-index": 2
+		},
+		{
 			"name": "Field names",
 			"layer_style": {
 				"terrain ... fields ... labels": {

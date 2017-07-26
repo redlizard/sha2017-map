@@ -38,6 +38,8 @@
 				"terrain ... buildings",
 				"terrain ... fence",
 				"tents ... tarps",
+				"tents ... village tents",
+				"tents ... village tents ... labels",
 				"objects ... tree",
 				"objects ... buildings",
 				"objects ... buildings ... toilet",
@@ -61,7 +63,7 @@
 			"layers": ["terrain ... villages ... borders"],
 			"path": "../map/villages.dxf",
 			"auto_import_layers": "false",
-			"handle_prefix": "v"
+			"handle_prefix": "vill"
 		}
 
 	},

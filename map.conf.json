@@ -321,7 +321,7 @@
 			"z-index": 3
 		},
 		{
-			"name": "Power -- APPROXIMATE",
+			"name": "Build-up Power",
 			"visible": "false",
 			"layer_style": {
 				"infrastructure": {

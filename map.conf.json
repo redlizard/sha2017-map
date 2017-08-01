@@ -64,7 +64,22 @@
 			"path": "../map/villages.dxf",
 			"auto_import_layers": "false",
 			"handle_prefix": "vill"
+		},
+		"noc": {
+			"layers": ["team-noc ... cables ... copper",
+				"team-noc ... cables ... fibre-single-mode",
+				"team-noc ... datenklos ... dk-and-label",
+				"team-noc ... datenklos ... radius-40m",
+				"team-noc ... scafftubes",
+				"team-noc ... labels",
+				"team-noc ... switch-in-tent"
+				],
+
+			"path": "../map/noc.dxf",
+			"auto_import_layers": "false",
+			"handle_prefix": "vill"
 		}
+
 
 	},
 	
